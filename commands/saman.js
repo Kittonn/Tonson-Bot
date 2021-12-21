@@ -8,20 +8,24 @@ module.exports = {
     name: 'saman',
     description: '9Saman Schedule',
     execute(msg, argument) {
-        const now = new Date();
-        const saman_day = new Date();
-        saman_day.setFullYear(2022,2,19)
-        const total = saman_day - now
-        const txt_totalday = Math.floor(total / (1000*60*60*24))
-
-        const saman = new MessageEmbed()
-            .setColor('#9b2226')
-            .setURL(url_mytcas) 
-            .setTitle(':hourglass: ตารางสอบ 9 วิชาสามัญ')
-            .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
-            .setImage(url_9saman_img)
-            .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
-
-        msg.channel.send({ embeds: [saman] });
+        if (argument.length > 0) {
+            return;
+        } else {
+            const now = new Date();
+            const saman_day = new Date();
+            saman_day.setFullYear(2022,2,19)
+            const total = saman_day - now
+            const txt_totalday = Math.floor(total / (1000*60*60*24))
+            
+            const saman = new MessageEmbed()
+                .setColor('#9b2226')
+                .setURL(url_mytcas) 
+                .setTitle(':hourglass: ตารางสอบ 9 วิชาสามัญ')
+                .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
+                .setImage(url_9saman_img)
+                .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
+            
+            msg.channel.send({ embeds: [saman] });
+        }
     }
 }

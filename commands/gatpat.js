@@ -9,20 +9,25 @@ module.exports = {
     description: 'Gat and Pat Schedule',
     execute(msg, argument) {
 
-        const now = new Date();
-        const gat_day = new Date();
-        gat_day.setFullYear(2022,2,12)
-        const total = gat_day - now
-        const txt_totalday = Math.floor(total / (1000*60*60*24))
+        if (argument.length > 0) {
+            return; 
+        } else {
+            const now = new Date();
+            const gat_day = new Date();
+            gat_day.setFullYear(2022,2,12)
+            const total = gat_day - now
+            const txt_totalday = Math.floor(total / (1000*60*60*24))
 
-        const gatpat = new MessageEmbed()
-            .setColor('#9b2226')
-            .setTitle(':hourglass: ตารางสอบ Gat & Pat')
-            .setURL(url_mytcas)
-            .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
-            .setImage(url_gatpat_img)
-            .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
-        
-        msg.channel.send({ embeds: [gatpat] });
+            const gatpat = new MessageEmbed()
+                .setColor('#9b2226')
+                .setTitle(':hourglass: ตารางสอบ Gat & Pat')
+                .setURL(url_mytcas)
+                .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
+                .setImage(url_gatpat_img)
+                .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
+            
+            msg.channel.send({ embeds: [gatpat] });
+
+        }
     }
 }

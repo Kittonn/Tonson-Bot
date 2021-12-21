@@ -41,7 +41,9 @@ module.exports = {
                     msg.channel.send({embeds: [covidEmbed]})
                 })
             } else {
-                
+                axios.get(url_covid_province).then(res => {
+                    console.log(res);
+                })
             }
         } catch (error) {
             msg.reply("No this argument.")

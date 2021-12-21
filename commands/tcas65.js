@@ -8,13 +8,17 @@ module.exports = {
     name: 'tcas65',
     description: 'tcas65 Schedule',
     execute(msg, argument) {
-        const tcas65 = new MessageEmbed()
-            .setColor('#9b2226')
-            .setURL(url_mytcas) 
-            .setTitle(':date: ปฏิทิน TCAS65')
-            .setImage(url_tcas65)
-            .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
-        
-        msg.channel.send({ embeds: [tcas65] });
+        if (argument.length > 0) {
+            return
+        } else {
+            const tcas65 = new MessageEmbed()
+                .setColor('#9b2226')
+                .setURL(url_mytcas) 
+                .setTitle(':date: ปฏิทิน TCAS65')
+                .setImage(url_tcas65)
+                .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
+            
+            msg.channel.send({ embeds: [tcas65] });
+        }
     }
 }

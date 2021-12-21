@@ -6,13 +6,17 @@ module.exports = {
     name: 'schedule',
     description: 'Show Class Schedule',
     execute(msg, argument) {
-        const schedule = new MessageEmbed()
-            .setColor('#ffb703')
-            .setTitle(':memo: ตารางสอน ชั้นมัธยมศึกษาปีที่ 6/3')
-            .setDescription('**:bangbang: อย่าลืมเช็คชื่อในแต่ละคาบ :bangbang:**')
-            .setImage(url_schedule)
-            .setFooter('อ้างอิงข้อมูลจาก ฝ่ายวิชาการโรงเรียนมารีวิทยากบินทร์บุรี')
+        if (argument.length > 0) {
+            return
+        } else {
+            const schedule = new MessageEmbed()
+                .setColor('#ffb703')
+                .setTitle(':memo: ตารางสอน ชั้นมัธยมศึกษาปีที่ 6/3')
+                .setDescription('**:bangbang: อย่าลืมเช็คชื่อในแต่ละคาบ :bangbang:**')
+                .setImage(url_schedule)
+                .setFooter('อ้างอิงข้อมูลจาก ฝ่ายวิชาการโรงเรียนมารีวิทยากบินทร์บุรี')
         
-        msg.channel.send({ embeds: [schedule] });
+            msg.channel.send({ embeds: [schedule] });
+        }
     }
 }

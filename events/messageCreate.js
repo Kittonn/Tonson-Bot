@@ -15,7 +15,7 @@ module.exports = {
         try {
             commands.get(command).execute(msg, argument)
         } catch (error) {
-            msg.reply("No this Command.")
+            return;
         }
     }
 }

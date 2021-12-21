@@ -7,18 +7,22 @@ const url_salim = 'https://watasalim.vercel.app/api/quotes/random'
 module.exports = {
     name: 'watasalim',
     execute(msg,argument) {
-        axios.get(url_salim).then(res => {
+        if (argument.length > 0) {
+            return
+        } else {
+            axios.get(url_salim).then(res => {
             
-            const quote = res.data.quote.body
-
-            const wataEmbed = new MessageEmbed()
-                .setColor('#ffb703')
-                .setTitle(':speech_balloon: วาทกรรมสลิ่ม')
-                .setDescription(`**${quote}**`)
+                const quote = res.data.quote.body
+    
+                const wataEmbed = new MessageEmbed()
+                    .setColor('#ffb703')
+                    .setTitle(':speech_balloon: วาทกรรมสลิ่ม')
+                    .setDescription(`**${quote}**`)
+                    
                 
-            
-            msg.channel.send({embeds: [wataEmbed]});
-            
-        })
+                msg.channel.send({embeds: [wataEmbed]});
+                
+            })
+        }
     }
 }
