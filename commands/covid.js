@@ -46,7 +46,7 @@ module.exports = {
                 })
             }
         } catch (error) {
-            msg.reply("No this argument.")
+            return
         }
     }
 }
