@@ -1,6 +1,7 @@
-const { Client, Collection, Intents } = require('discord.js')
+const { Client, Intents, MessageEmbed } = require('discord.js')
 const fs = require('fs')
 const client = new Client({ intents:[Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]})
+
 
 const config = require('./config.json')
 
@@ -15,6 +16,8 @@ for(const file of eventFiles) {
         client.on(event.name, (args) => event.execute(args,client))
     }
 }
+// (sec, min, hour, day-number, month, day-name)
+
 
 client.login(config.token)
 
