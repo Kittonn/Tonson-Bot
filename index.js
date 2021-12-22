@@ -4,9 +4,8 @@ const client = new Client({ intents:[Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_M
 
 const config = require('./config.json')
 
-const eventFiles = fs
-    .readdirSync('./events')
-    .filter((file) => file.endsWith(".js"))
+const eventFiles = fs.readdirSync('./events')
+                    .filter((file) => file.endsWith(".js"))
 
 for(const file of eventFiles) {
     const event = require(`./events/${file}`)
@@ -16,6 +15,5 @@ for(const file of eventFiles) {
         client.on(event.name, (args) => event.execute(args,client))
     }
 }
-
 
 client.login(config.token)
