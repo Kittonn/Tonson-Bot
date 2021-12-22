@@ -1,10 +1,8 @@
-const {Client, Intents} = require('discord.js')
-const dotenv = require('dotenv')
+const { Client, Collection, Intents } = require('discord.js')
 const fs = require('fs')
 const client = new Client({ intents:[Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]})
 
-
-dotenv.config()
+const config = require('./config.json')
 
 const eventFiles = fs
     .readdirSync('./events')
@@ -20,5 +18,4 @@ for(const file of eventFiles) {
 }
 
 
-
-client.login(process.env.TOKEN)
+client.login(config.token)
