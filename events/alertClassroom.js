@@ -236,7 +236,7 @@ module.exports = {
                             .setColor('#57F2AA')
                             .setTitle(':alarm_clock: Alert Classroom')
                             .setDescription(':clock12: **Time** : `15:25-17:00` '
-                                            +'\n\n:books: **Subject** : `ฟิิสิกส์`'
+                                            +'\n\n:books: **Subject** : `ดาราศาสตร์`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูนริศรา`'
                                             +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
                                             + "\n\n:bookmark: **Classroom** : https://classroom.google.com/c/MzcwMjgwODQ0Nzk1"
