@@ -10,7 +10,7 @@ module.exports = {
 
         //================================| Monday |=======================================
 
-        cron.schedule('45 7 * * thu', async () => {
+        cron.schedule('45 7 * * mon', async () => {
 
             const Embed = new MessageEmbed()
                             .setColor('#57F2AA')
@@ -28,14 +28,14 @@ module.exports = {
             timezone: 'Asia/Bangkok'
         })
 
-        cron.schedule('10 9 * * thu', async () => {
+        cron.schedule('10 9 * * mon', async () => {
 
             const Embed = new MessageEmbed()
                             .setColor('#57F2AA')
                             .setTitle(':alarm_clock: Alert Classroom')
                             .setDescription(':clock12: **Time** : `09:10-10:50` '
                                             +'\n\n:books: **Subject** : `เคมี`'
-                                            +'\n\n:teacher: **Teacher** : `คุณครูชิงชัย อุตรัตน์`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูธนากร มหาราช`'
                                             +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
                                             )
                                     
@@ -46,7 +46,61 @@ module.exports = {
             timezone: 'Asia/Bangkok'
         })
 
-        cron.schedule('10 16 * * thu', async () => {
+        cron.schedule('50 10 * * mon', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `10:50-12:30` '
+                                            +'\n\n:books: **Subject** : `คณิตศาสตร์เพิ่มเติม`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูจีรนันท์ สีนอก`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('15 14 * * mon', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `14:15-15:00` '
+                                            +'\n\n:books: **Subject** : `ภาษาอังกฤษ`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูสหาย สุระเสียง`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('25 15 * * mon', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `15:25-16:10` '
+                                            +'\n\n:books: **Subject** : `สังคมศึกษา`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูหนึ่งฤทัย ทรัพย์พร้อม`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('10 16 * * mon', async () => {
 
             const Embed = new MessageEmbed()
                             .setColor('#57F2AA')
