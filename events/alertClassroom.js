@@ -10,14 +10,14 @@ module.exports = {
 
         //================================| Monday |=======================================
 
-        cron.schedule('47 0 * * thu', async () => {
+        cron.schedule('45 7 * * thu', async () => {
 
             const Embed = new MessageEmbed()
                             .setColor('#57F2AA')
                             .setTitle(':alarm_clock: Alert Classroom')
-                            .setDescription(':timer: **Time** : .........'
-                                            +'\n\n:books: **Subject** : บลาๆๆๆๆ'
-                                            +'\n\n:teacher: **Teacher** : ................'
+                            .setDescription(':clock12: **Time** : 7-45-8.30'
+                                            +'\n\n:books: **Subject** : Social'
+                                            +'\n\n:teacher: **Teacher** : Raya'
                                             +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
                                             + "\n\n:bookmark: **Classroom** : .........."
                                             )
@@ -27,6 +27,27 @@ module.exports = {
         },{
             scheduled: true,
             timezone: 'Asia/Bangkok'
-        })    
+        })
+
+        cron.schedule('45 7 * * thu', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : 7-45-8.30'
+                                            +'\n\n:books: **Subject** : Social'
+                                            +'\n\n:teacher: **Teacher** : Raya'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            + "\n\n:bookmark: **Classroom** : .........."
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+        
+        
     }
 }
