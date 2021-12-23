@@ -165,7 +165,7 @@ module.exports = {
                             .setDescription(':clock12: **Time** : `10:00-10:50` '
                                             +'\n\n:books: **Subject** : `พลศึกษา`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูสิทธิเดช ขันธ์พานิช`'
-                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/82279179689'
+                                            +'\n\n:link: **Link** : ไม่แน่นอน'
                                             )
                                     
 
