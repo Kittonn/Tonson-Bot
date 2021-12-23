@@ -72,7 +72,7 @@ module.exports = {
                             .setDescription(':clock12: **Time** : `14:15-15:00` '
                                             +'\n\n:books: **Subject** : `ภาษาอังกฤษ`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูสหาย สุระเสียง`'
-                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            +'\n\n:link: **Link** : ไม่แน่นอน'
                                             )
                                     
 
@@ -108,7 +108,7 @@ module.exports = {
                             .setDescription(':clock12: **Time** : `16:10-17:00` '
                                             +'\n\n:books: **Subject** : `Social`'
                                             +'\n\n:teacher: **Teacher** : `Mrs. Soraya C. Chongkhophanawet`'
-                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/9504580269'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
                                             + "\n\n:bookmark: **Classroom** : https://classroom.google.com/c/Mzc2MDE3OTA5NTE5"
                                             )
                                     
