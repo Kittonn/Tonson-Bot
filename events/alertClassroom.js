@@ -351,7 +351,7 @@ module.exports = {
                             .setDescription(':clock12: **Time** : `15:25-17:00`'
                                             +'\n\n:books: **Subject** : `เลือกเสรี`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูอดิศักดิ์ ศรีจันทร์`'
-                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/9504580269'
+                                            +'\n\n:link: **Link** : ไม่แน่นอน'
                                             )
                                     
 
