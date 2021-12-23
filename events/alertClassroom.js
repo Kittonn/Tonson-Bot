@@ -119,6 +119,136 @@ module.exports = {
             timezone: 'Asia/Bangkok'
         })
 
+        //================================| Tuesday |=======================================
+
+        cron.schedule('45 7 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `07:45-08:30` '
+                                            +'\n\n:books: **Subject** : `คณิตศาสตร์`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูชิงชัย อุตรัตน์`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('10 9 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `09:10-10:00` '
+                                            +'\n\n:books: **Subject** : `Physics`'
+                                            +'\n\n:teacher: **Teacher** : `Mr.Jubert P. Bela-o`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('0 10 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `10:00-10:50` '
+                                            +'\n\n:books: **Subject** : `พลศึกษา`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูสิทธิเดช ขันธ์พานิช`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/82279179689'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('50 10 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `10:50-12:00` '
+                                            +'\n\n:books: **Subject** : `Chemistry`'
+                                            +'\n\n:teacher: **Teacher** : `Mrs.Abel Andos`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('0 12 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `12:00-12:30` '
+                                            +'\n\n:books: **Subject** : `การงาน`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูเบ็ญจวรรณ์`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('30 13 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `13:30-15:00` '
+                                            +'\n\n:books: **Subject** : `ฟิิสิกส์`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูสุรเกียรติ`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            + "\n\n:bookmark: **Classroom** : https://classroom.google.com/c/MjUwMDMyNTg0MzQ3"
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
+        cron.schedule('25 15 * * tue', async () => {
+
+            const Embed = new MessageEmbed()
+                            .setColor('#57F2AA')
+                            .setTitle(':alarm_clock: Alert Classroom')
+                            .setDescription(':clock12: **Time** : `15:25-17:00` '
+                                            +'\n\n:books: **Subject** : `ฟิิสิกส์`'
+                                            +'\n\n:teacher: **Teacher** : `คุณครูนริศรา`'
+                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/6365107396?pwd=RFI0UmcrQ0xib1FRNzNIdXNyK2FmUT09'
+                                            + "\n\n:bookmark: **Classroom** : https://classroom.google.com/c/MzcwMjgwODQ0Nzk1"
+                                            )
+                                    
+
+            await channel.send({ embeds: [Embed] })
+        },{
+            scheduled: true,
+            timezone: 'Asia/Bangkok'
+        })
+
         //================================| Thursday |=======================================
 
         cron.schedule('45 7 * * thu', async () => {
