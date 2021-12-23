@@ -16,7 +16,7 @@ for(const file of eventFiles) {
         client.on(event.name, (args) => event.execute(args,client))
     }
 }
-// (sec, min, hour, day-number, month, day-name)
+
 
 
 client.login(config.token)
