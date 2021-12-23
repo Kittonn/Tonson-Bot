@@ -371,7 +371,7 @@ module.exports = {
                             .setDescription(':clock12: **Time** : `07:45-08:30`'
                                             +'\n\n:books: **Subject** : `ดนตรี`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูศิวนาท ฟ้องเสียง`'
-                                            +'\n\n:link: **Link** : https://us02web.zoom.us/j/86539388516'
+                                            +'\n\n:link: **Link** : ไม่แน่นอน'
                                             )
                                     
 
