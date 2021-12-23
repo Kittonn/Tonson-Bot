@@ -107,7 +107,7 @@ module.exports = {
             const Embed = new MessageEmbed()
                             .setColor('#57F2AA')
                             .setTitle(':alarm_clock: Alert Classroom')
-                            .setDescription(':clock12: **Time** : `14:15-15:00`'
+                            .setDescription(':clock12: **Time** : `15:25-17:00`'
                                             +'\n\n:books: **Subject** : `เลือกเสรี`'
                                             +'\n\n:teacher: **Teacher** : `คุณครูอดิศักดิ์ ศรีจันทร์`'
                                             +'\n\n:link: **Link** : https://us02web.zoom.us/j/9504580269'
@@ -119,6 +119,11 @@ module.exports = {
             scheduled: true,
             timezone: 'Asia/Bangkok'
         })
+
+
+        //================================| Friday |=======================================
+
+        
 
     }
 }
