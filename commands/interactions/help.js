@@ -24,36 +24,49 @@ const row = new MessageActionRow()
                 label: 'Schedule',
                 description: 'Send Class Schedule.',
                 value: 'schedule',
+                emoji: '🏫'
             },
             {
                 label: 'Gatpat',
                 description: 'Send Gat & Pat Schedule.',
                 value: 'gatpat',
+                emoji: '📆'
             },
             {
                 label: 'Saman',
                 description: 'Send Saman Schedule.',
                 value: 'saman',
+                emoji: '🗓️'
             },
             {
                 label: 'Tcas65',
                 description: 'Send Tcas65 Schedule.',
                 value: 'tcas65',
+                emoji: '🗓️'
             },
             {
                 label: 'Inspirational Quote',
                 description: 'Send Inspirational Quote.',
                 value: 'inspire',
+                emoji: '💗'
             },
             {
                 label: 'Watasalim Quote',
                 description: 'Send Watasalim Quote.',
                 value: 'watasalim',
+                emoji: '💬'
             },
             {
                 label: 'Developer Information',
                 description: 'Send Developer Information.',
                 value: 'dev',
+                emoji: '👨‍💻'
+            },
+            {
+                label: 'Covid Thailand',
+                description: 'Send Covid Stats in Thailand.',
+                value: 'covid',
+                emoji: '🦠'
             }
         ]),
 );

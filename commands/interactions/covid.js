@@ -10,7 +10,7 @@ const url_covid_province = 'https://covid19.ddc.moph.go.th/api/Cases/today-cases
 module.exports = {
     data: new SlashCommandBuilder()
 		.setName('covid')
-		.setDescription('Sent Covid Stats in Thailand.'),
+		.setDescription('Send Covid Stats in Thailand.'),
     async execute(interaction) {
 
         axios.get(url_covid).then(res => {

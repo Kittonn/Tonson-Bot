@@ -18,15 +18,18 @@ const row = new MessageActionRow()
   new MessageButton()
     .setLabel('GITHUB')
     .setStyle('LINK')
-    .setURL(url_github),
+    .setURL(url_github)
+    .setEmoji('⚫'),
   new MessageButton()
     .setLabel('FACEBOOK')
     .setStyle('LINK')
-    .setURL(url_facebook),
+    .setURL(url_facebook)
+    .setEmoji('🔵'),
   new MessageButton()
     .setLabel('INSTAGRAM')
     .setStyle('LINK')
     .setURL(url_ig)
+    .setEmoji('🟡')
 );
 
 module.exports = {
