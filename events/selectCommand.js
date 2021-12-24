@@ -16,5 +16,6 @@ module.exports = {
         if (interaction.customId === 'select') {
             await command.execute(interaction)
         }
+
     }
 }
