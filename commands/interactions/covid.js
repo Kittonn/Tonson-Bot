@@ -41,11 +41,11 @@ module.exports = {
                     .setTitle(`🦠 รายงานยอดผู้ติดเชื้อประเทศ ${country}`)
                     .setDescription(`\`ข้อมูล ณ ${date}\``)
                     .addFields(
-                        {name: 'ติดเชื้อเพิ่มวันนี้', value: `${todayCases}`, inline: true},
-                        {name: 'ติดเชื้อสะสมในประเทศ', value: `${cases}`, inline: true},
-                        {name: 'เสียชีวิตเพิ่ม', value: `${todayDeaths}`, inline: true},
-                        {name: 'เสียชีวิตรวม', value: `${deaths}`, inline: true},
-                        {name: 'รักษาหายรวม', value: `${recovered}`, inline: true}
+                        {name: 'ติดเชื้อเพิ่มวันนี้', value: `${todayCases.toLocaleString()}`, inline: true},
+                        {name: 'ติดเชื้อสะสมในประเทศ', value: `${cases.toLocaleString()}`, inline: true},
+                        {name: 'เสียชีวิตเพิ่ม', value: `${todayDeaths.toLocaleString()}`, inline: true},
+                        {name: 'เสียชีวิตรวม', value: `${deaths.toLocaleString()}`, inline: true},
+                        {name: 'รักษาหายรวม', value: `${recovered.toLocaleString()}`, inline: true}
                     )
                     
                     
