@@ -4,15 +4,15 @@ const { MessageActionRow, MessageSelectMenu } = require('discord.js');
 
 const help = new MessageEmbed()
     .setColor('#03045e')
-    .setTitle(':file_folder: Command List')
-    .setDescription('**:red_circle: Prefix : `;`**'+ 
-                    '\n\n**:school: Class Schedule** \n`;schedule` = `ดูตารางสอน online`'+ 
-                    '\n\n**:memo: TCAS65 Schudule**\n `;gatpat` = `ดูตารางสอบ Gat & Pat และดูเวลาเตรียมตัว`'+ 
+    .setTitle('📁 Command List')
+    .setDescription('**🔴 Prefix : `;`**'+ 
+                    '\n\n**🏫 Class Schedule** \n`;schedule` = `ดูตารางสอน online`'+ 
+                    '\n\n**📝 TCAS65 Schudule**\n `;gatpat` = `ดูตารางสอบ Gat & Pat และดูเวลาเตรียมตัว`'+ 
                     '\n `;saman` = `ดูตารางสอบ 9 วิชาสามัญ และดูเวลาเตรียมตัว` \n `;tcas65` = `ดูปฏิทิน TCAS65`'+ 
-                    '\n\n **:speech_left: Message API** \n`;covid` = `ดูรายงานโควิดประจำประเทศไทย`'+
+                    '\n\n **🗨️ Message API** \n`;covid ชื่อประเทศ` = `ดูรายงานโควิดแต่ละประเทศ`'+
                     ' \n `;inspire` = `ดูแรงบันดาลใจ`'+
                     '\n`;watasalim` = `ดูวาทกรรมสลิ่ม`'+
-                    '\n\n **:mag_right: About** \n `;dev` = `ข้อมูลผู้พัฒนา`')
+                    '\n\n **🔎 About** \n `;dev` = `ข้อมูลผู้พัฒนา`')
 
 const row = new MessageActionRow()
 .addComponents(

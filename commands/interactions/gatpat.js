@@ -13,7 +13,7 @@ const txt_totalday = Math.floor(total / (1000*60*60*24))
 
 const gatpat = new MessageEmbed()
     .setColor('#9b2226')
-    .setTitle(':hourglass: ตารางสอบ Gat & Pat')
+    .setTitle('⏳ ตารางสอบ Gat & Pat')
     .setURL(url_mytcas)
     .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
     .setImage(url_gatpat_img)

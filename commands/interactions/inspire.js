@@ -15,7 +15,7 @@ module.exports = {
 
             const inspite_quote = new MessageEmbed()
                 .setColor('#3c096c')
-                .setTitle(':speech_balloon: Inspirational Quotes')
+                .setTitle('💬 Inspirational Quotes')
                 .setDescription(`**${quote}** \n ${name}`)
             return interaction.reply({embeds: [inspite_quote]})
             

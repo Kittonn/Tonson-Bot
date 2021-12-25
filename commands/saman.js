@@ -20,7 +20,7 @@ module.exports = {
             const saman = new MessageEmbed()
                 .setColor('#9b2226')
                 .setURL(url_mytcas) 
-                .setTitle(':hourglass: ตารางสอบ 9 วิชาสามัญ')
+                .setTitle('⏳ ตารางสอบ 9 วิชาสามัญ')
                 .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
                 .setImage(url_9saman_img)
                 .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)

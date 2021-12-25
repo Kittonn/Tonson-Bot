@@ -20,7 +20,7 @@ module.exports = {
 
             const gatpat = new MessageEmbed()
                 .setColor('#9b2226')
-                .setTitle(':hourglass: ตารางสอบ Gat & Pat')
+                .setTitle('⏳ ตารางสอบ Gat & Pat')
                 .setURL(url_mytcas)
                 .setDescription(`====== **เหลือเวลาเตรียมตัวอีก ${txt_totalday} วัน** ======`)
                 .setImage(url_gatpat_img)

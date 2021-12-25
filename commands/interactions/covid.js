@@ -38,7 +38,7 @@ module.exports = {
                 
                 const covidEmbed = new MessageEmbed()
                     .setColor('#001524')
-                    .setTitle(`:microbe: รายงานยอดผู้ติดเชื้อประเทศ ${country}`)
+                    .setTitle(`🦠 รายงานยอดผู้ติดเชื้อประเทศ ${country}`)
                     .setDescription(`\`ข้อมูล ณ ${date}\``)
                     .addFields(
                         {name: 'ติดเชื้อเพิ่มวันนี้', value: `${todayCases}`, inline: true},

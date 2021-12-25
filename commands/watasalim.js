@@ -16,7 +16,7 @@ module.exports = {
     
                 const wataEmbed = new MessageEmbed()
                     .setColor('#ffb703')
-                    .setTitle(':speech_balloon: วาทกรรมสลิ่ม')
+                    .setTitle('💬 วาทกรรมสลิ่ม')
                     .setDescription(`**${quote}**`)
                     
                 

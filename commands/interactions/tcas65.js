@@ -8,7 +8,7 @@ const url_mytcas_img = 'https://media.discordapp.net/attachments/906186108650528
 const tcas65 = new MessageEmbed()
     .setColor('#9b2226')
     .setURL(url_mytcas) 
-    .setTitle(':date: ปฏิทิน TCAS65')
+    .setTitle('🗓️ ปฏิทิน TCAS65')
     .setImage(url_tcas65)
     .setFooter('อ้างอิงข้อมูลจาก www.mytcas.com', url_mytcas_img)
 
