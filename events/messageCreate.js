@@ -6,7 +6,7 @@ module.exports = {
     execute(msg,client) {
         const args = msg.content.substring(PREFIX.length).split(/ +/)
         const command = args.shift().toLowerCase()
-        const argument = args.toString().toLowerCase()
+        const argument = args.toString()
 
         if (!msg.content.startsWith(PREFIX) || msg.author.bot) return;
         
