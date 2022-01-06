@@ -20,9 +20,9 @@ module.exports = {
                                 .setDescription('Country you want to know stats.')
                                 .setRequired(true)),
     async execute(interaction) {
-
+    
         const args = interaction.options.getString('country')
-
+    
         const value = await arrCovid()
         const data = value.data
 
